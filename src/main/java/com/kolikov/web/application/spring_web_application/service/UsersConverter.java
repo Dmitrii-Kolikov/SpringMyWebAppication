@@ -5,7 +5,7 @@ import com.kolikov.web.application.spring_web_application.entity.Users;
 import lombok.Builder;
 import org.springframework.stereotype.Component;
 
-@Builder
+
 @Component
 public class UsersConverter {
 

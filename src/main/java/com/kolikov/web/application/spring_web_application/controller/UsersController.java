@@ -17,6 +17,7 @@ import java.util.List;
 @RequestMapping("/users")
 @AllArgsConstructor
 @Log
+@CrossOrigin
 public class UsersController {
 
     @Autowired
@@ -27,6 +28,7 @@ public class UsersController {
         log.info("Handling save users: " + usersDto);
         return userService.saveUser(usersDto);
     }
+
 
     @GetMapping("/findAll")
     public List<UsersDto> findAllUsers() {
